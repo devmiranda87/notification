@@ -23,5 +23,3 @@ $mailer->sendMail(
     'thiagomiranda.tms@gmail.com',
     'Thiago Teste'
 );
-
-var_dump($mailer);
