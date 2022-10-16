@@ -1,25 +1,25 @@
 <?php
 
-require __DIR__ . '/../lib_ext/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Notification\Email;
 
-$mailer = new Email(
+$email = new Email(
     2,
-    'smtp.sendgrid.com',
-    'devmiranda',
-    'xxxxx',
-    'TLS',
-    587,
-    'support@garage87.com',
-    'support'
+    "mail.host.com",
+    "your@email.com",
+    "your-pass",
+    "smtp secure (tls/ssl)",
+    "port(587)",
+    "from@email.com",
+    "From Name"
 );
 
-$mailer->sendMail(
-    'teste de e-mail',
-    "<p>Teste de e-mail</p>",
-    'thiagomiranda.tms@gmail.com',
-    'Thaigo Teste',
-    'thiagomiranda.tms@gmail.com',
-    'Thiago Teste'
+$email->sendEmail(
+    "SUbject",
+    "Content",
+    "reply@email.com",
+    "Replay Name",
+    "address@email.com",
+    "Address Name"
 );
