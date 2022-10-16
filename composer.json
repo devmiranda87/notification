@@ -1,0 +1,25 @@
+{
+    "name": "devmiranda/composer",
+    "description": "Just a live code from upinside class",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thiago Miranda",
+            "email": "thiagomiranda.tms@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.6.5"
+    },
+    "config": {
+        "vendor-dir": "lib_ext"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notification\\": "_app"
+        }
+    }
+}
